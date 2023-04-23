@@ -16,9 +16,7 @@ export default function ReceiptsPage({ receipts }: { receipts: any[] }) {
 export async function getServerSideProps() {
   try {
     const dev = process.env.NODE_ENV !== 'production';
-    const server = dev
-      ? 'http://localhost:3000'
-      : 'https://mflix-pi.vercel.app';
+    const server = dev ? 'http://localhost:3000' : 'https://fbl-mbl.vercel.app';
 
     const res = await fetch(`${server}/api/receipts`);
     const data = await res.json();
