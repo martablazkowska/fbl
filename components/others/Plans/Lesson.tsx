@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PlanItem } from './plans.interface';
+import { PlanItem } from './Plans.interface';
 
 interface LessonProps {
   lesson: PlanItem;
