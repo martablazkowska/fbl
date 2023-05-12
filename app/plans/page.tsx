@@ -1,4 +1,4 @@
-import Plans from '../components/others/Plans/Plans';
+import Plans from '../../components/others/Plans/Plans';
 
 const PlansPage = () => {
   return <Plans />;

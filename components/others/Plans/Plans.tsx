@@ -1,3 +1,4 @@
+'use client';
 import { useMemo, ChangeEvent, useState } from 'react';
 
 import { getCurrentDay, isWeekendToday } from '../../../helpers/DateAndTime';
