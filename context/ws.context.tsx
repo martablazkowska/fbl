@@ -42,7 +42,7 @@ const WsProvider = ({ children }: WsProviderProps) => {
 
     return () => {
       console.log('return');
-      // socket.close();
+      socket.close();
     };
   }, [WS_URL]);
 
