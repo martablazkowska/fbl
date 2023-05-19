@@ -31,7 +31,7 @@ const WsProvider = ({ children }: WsProviderProps) => {
     wsRef.current = socket;
 
     return () => {
-      socket.close();
+      // socket.close();
     };
   }, []);
 
