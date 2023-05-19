@@ -2,7 +2,7 @@
 
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import WsProvider from '../context/ws.context';
+// import WsProvider from '../context/ws.context';
 
 const colors = {
   brand: {
@@ -16,10 +16,10 @@ export const theme = extendTheme({ colors });
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <WsProvider>
-      <CacheProvider>
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
-      </CacheProvider>
-    </WsProvider>
+    // <WsProvider>
+    <CacheProvider>
+      <ChakraProvider theme={theme}>{children}</ChakraProvider>
+    </CacheProvider>
+    // </WsProvider>
   );
 }

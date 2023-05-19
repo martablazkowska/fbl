@@ -13,20 +13,20 @@ export default async function ReceiptsPage() {
   const receipts = await getData();
 
   return (
-    // <WsProvider>
-    <div>
-      <h1>Receipts</h1>
-      <ul>
-        {receipts.map((receipt: any) => (
-          <li key={receipt._id}>
-            <Link href={`/receipts/${receipt._id}`}>{receipt.name}</Link>
+    <WsProvider>
+      <div>
+        <h1>Receipts</h1>
+        <ul>
+          {receipts.map((receipt: any) => (
+            <li key={receipt._id}>
+              <Link href={`/receipts/${receipt._id}`}>{receipt.name}</Link>
+            </li>
+          ))}
+          <li>
+            <a href="http://google.com">Leave</a>
           </li>
-        ))}
-        <li>
-          <a href="http://google.com">Leave</a>
-        </li>
-      </ul>
-    </div>
-    // </WsProvider>
+        </ul>
+      </div>
+    </WsProvider>
   );
 }

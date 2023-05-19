@@ -29,12 +29,13 @@ const WsProvider = ({ children }: WsProviderProps) => {
     socket.onclose = function (event) {
       if (event.wasClean) {
         console.log(
-          `[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`
+          `[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`,
+          event
         );
       } else {
         // e.g. server process killed or network down
         // event.code is usually 1006 in this case
-        console.log('[close] Connection died');
+        console.log('[close] Connection died', event);
       }
     };
 
