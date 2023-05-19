@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { fetchReceipts } from '../../service/receipts.service';
+import WsProvider from '../../context/ws.context';
 
 async function getData() {
   const receipts = await fetchReceipts();
@@ -10,6 +13,7 @@ export default async function ReceiptsPage() {
   const receipts = await getData();
 
   return (
+    // <WsProvider>
     <div>
       <h1>Receipts</h1>
       <ul>
@@ -23,5 +27,6 @@ export default async function ReceiptsPage() {
         </li>
       </ul>
     </div>
+    // </WsProvider>
   );
 }

@@ -24,16 +24,8 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 
-import { WsContext } from '../../../context/ws.context';
-import { useContext, useEffect } from 'react';
-
 export default function WithSubnavigation() {
-  const { ws } = useContext<any>(WsContext);
   const { isOpen, onToggle } = useDisclosure();
-
-  useEffect(() => {
-    console.log(ws);
-  }, [ws]);
 
   return (
     <Box>
