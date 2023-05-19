@@ -19,7 +19,7 @@
     "framer-motion": "^10.12.4",
     "mongodb": "^4.8.1",
     "next": "latest",
-    "next-pwa": "^8.4.1",
+    "next-pwa": "^5.6.0",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
