@@ -18,6 +18,9 @@ export default async function ReceiptsPage() {
             <Link href={`/receipts/${receipt._id}`}>{receipt.name}</Link>
           </li>
         ))}
+        <li>
+          <a href="http://google.com">Leave</a>
+        </li>
       </ul>
     </div>
   );
